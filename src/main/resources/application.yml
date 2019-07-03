@@ -1,0 +1,22 @@
+server:
+  port: 2227
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url.defaultZone: http://localhost:7000/eureka/
+
+spring:
+    application:
+      name: spring-config
+    cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/1036225283/spring-profile.git
+            username: id512@126.com
+            password: Xws123456
+            search-paths: config
+
